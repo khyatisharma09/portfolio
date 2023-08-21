@@ -58,7 +58,7 @@
             display: flex;
             justify-content: space-around;
             margin: 23px 0;
-            
+
         }
 
         firstsection div {
@@ -70,18 +70,21 @@
             width: 50%;
             font-size: 3rem;
             margin: auto;
-            padding:30px
+            padding: 30px;
+
         }
-        .leftdivision .buttons{
+
+        .leftdivision .buttons {
             padding: 0 15px;
         }
-        .leftdivision .btn{
-            padding:12px;
+
+        .leftdivision .btn {
+            padding: 12px;
             background-color: rgb(122, 150, 200);
-            color:white;
+            color: white;
             border: 2px solid white;
             border-radius: 5px;
-            font-size:20px ;
+            font-size: 20px;
             cursor: pointer;
 
         }
@@ -108,9 +111,10 @@
             height: 1.2px;
             margin: 40px 84px;
         }
-        .secondsection{
-            height:350px;
-            padding:30px;
+
+        .secondsection {
+            height: 350px;
+            padding: 30px;
         }
 
         .secondsection h1 {
@@ -130,7 +134,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 200px;
+            margin: 0 6vw;
         }
 
         .image-top {
@@ -148,9 +152,9 @@
         }
 
         .vertical-desc {
-            position:relative;
-            top:55px;
-            color:gray;
+            position: relative;
+            top: 55px;
+            color: gray;
             font-size: 9px;
         }
 
@@ -160,24 +164,109 @@
         }
 
         footer {
-            background-color: rgb(1, 1, 29);
+            background-color: rgb(17, 2, 51);
             height: 233px;
             justify-self: space-evenly;
-        }
-        .footer{
-            display:flex;
-            justify-self: space-evenly;
+            padding-left: 1.5cm;
 
         }
-        footer >div{
-            width:223px;
-        }
-        footer .footer-rights{
+
+
+        footer .footer-rights {
             text-align: center;
             color: gray;
-            padding: 0 123;
+            font-size: 15px;
+
+
+        }
+
+        footer .footer-second {
+            color: rgb(10, 130, 128);
+            font-style: italic;
+        }
+
+        footer .footer-fourth {
+            font-size: 13px;
+            color: darkturquoise;
+        }
+
+        footer .footer-third {
+            font-size: 13px;
+            color: darkturquoise;
+        }
+
+        footer .footer-fourth a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:1200px) {
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .secondsection {
+                max-width: 40vw;
+                margin: auto;
+                height:-50vh; 
+
+            }
+            
+
+            .secondsection .vertical {
+                height: unset;
+
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 35px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .leftdivision {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .rightdivision {
+                width: 521px;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .secondsection {
+                max-width: 30vw;
+                margin: auto;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            body {
+                min-width: fit-contentS;
+            }
+
+            .rightdivision img {
+                width: 45%;
+            }
+
+            .image-top {
+                top: 90px;
+            }
+
         }
     </style>
+
+
 </head>
 
 <body>
@@ -202,18 +291,19 @@
     <main>
         <section class="firstsection">
             <div class="leftdivision">
-                hey!! My name is <span class="purple">Khyati</span>.
-                <div> and i am a passionate</div>
+                <div>Hello! My name is</div> <span class="purple">Khyati</span>
+                <div> and I am a passionate</div>
 
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn"> download resume</button>
-                    <button class="btn"> visit GitHub</button>
+                    <button class="btn"> Download Resume</button>
+                    <button class="btn"> Visit GitHub</button>
                 </div>
 
             </div>
             <div class="rightdivision">
-                <img src="bg.png"></div>
+                <img src="bg.png">
+            </div>
         </section>
         <hr>
         <section class="secondsection">
@@ -228,12 +318,12 @@
                 <div class="vertical">
                     <img class="image-top" src="html.png" alt="">
                     <div class="vertical-title"> html developer</div>
-                    <div class="vertical-desc"> asdfghjkll</div>    
+                    <div class="vertical-desc"> asdfghjkll</div>
                 </div>
 
                 <div class="vertical">
                     <img class="image-top" src="css.png" alt="">
-                    <div class="vertical-title"> css  developer</div>
+                    <div class="vertical-title"> css developer</div>
                     <div class="vertical-desc"> asdfghjkll</div>
                 </div>
 
@@ -252,16 +342,21 @@
                 <h3> Khyati's developer portfolio</h3>
             </div>
             <div class="footer-second">
-                <ul>
-                    <li>HOME</li>
-                    <li>HOME</li>
-                    <li>HOME</li>
-                </ul>
+                Contact Me
             </div>
-            <div class="footer-third"></div>
-            <div class="footer-fourth"></div>
+            <div class="footer-third">
+                Phone No:- +91 6261474458
+
+            </div>
+            <div class="footer-fourth">
+                <div><a href=""> Email:- khyati1750@gmail.com</a></div>
+                <div><a href=""> Linkden:-Khyati Sharma </a></div>
+                <div><a href=""> Instagram:- @_khyatiiiiii</a></div>
+                <div><a href=""> GitHub:- @khyatisharma09</a></div>
+
+            </div>
             <div class="footer-rights">
-                www.khyatisportfolio.com | all rights reserved
+                copyright www.khyatisportfolio.com | All Rights Reserved
             </div>
 
         </div>
@@ -272,7 +367,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['web developer', 'graphic designer', 'software tester', 'web designer'],
+            strings: ['Web Developer', 'UI/UX Designer', 'Software Tester', 'Full Stack Developer'],
             typeSpeed: 50,
         });
     </script>
